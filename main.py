@@ -96,7 +96,7 @@ class Character:
         
 
         # Can do more formatting and drawing as needed
-        # ...
+    
 
         c.save()
 
