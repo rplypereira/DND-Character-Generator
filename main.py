@@ -1,6 +1,7 @@
 import random
 import json
 import stats
+import time as t
 
 with open("names.json","r") as f:
     n_data = json.load(f)
@@ -68,6 +69,11 @@ class Character:
             print(f"An error occurred while writing to {file_path}: {e}")
             
 if __name__ == "__main__":
+    start_time = t.time()
     character = Character()
     character.save_to_file(character.name+'.json')#character.name+
+    end_time = t.time()
+    
+    elapsed_time = end_time - start_time
+    print(f"The script took  {elapsed_time} seconds to run")
     
