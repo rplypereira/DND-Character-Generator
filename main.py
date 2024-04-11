@@ -14,7 +14,7 @@ GENDERS = ['Male', 'Female']
 class Character:
     def __init__(self):
         self.gender = random.choice(GENDERS)
-        self.race = self. generate_race()
+        self.race = self.generate_race()
         self.name = self.generate_name()
         self.char_class = self.generate_class()
         self.stats = stats.get_stats()
